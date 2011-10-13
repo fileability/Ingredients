@@ -463,7 +463,7 @@ const NSInteger IGKStoreVersion = 4;
 - (dispatch_queue_t)backgroundQueue
 {
 	if (backgroundQueue == NULL)
-		backgroundQueue = dispatch_queue_create(NULL, NULL);
+		backgroundQueue = dispatch_get_main_queue();
 	
 	return backgroundQueue;
 }
