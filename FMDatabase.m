@@ -103,11 +103,9 @@
 
 - (void)clearCachedStatements {
     
-    NSEnumerator *e = [cachedStatements objectEnumerator];
-    FMStatement *cachedStmt;
-
-    while ((cachedStmt = [e nextObject])) {
-    	[cachedStmt close];
+    for (NSString *key in cachedStatements) {
+      FMStatement *cachedStmt = [cachedStatements objectForKey:key];
+      [cachedStmt close];
     }
     
     [cachedStatements removeAllObjects];
