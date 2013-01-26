@@ -108,6 +108,17 @@ const char *common_strrstr(const char *string, const char *find);
     if (src) [src retain];
     return old;
   }
+  
+  static inline BOOL ct_casid(id volatile *target, id newval) {
+    id oldval = *target;
+    if (__sync_bool_compare_and_swap((void*volatile*)target, (void*)oldval,
+                                     (void*)newval)) {
+      [newval retain];
+      [oldval release];
+      return YES;
+    }
+    return NO;
+  }
 #endif // __OBJC__
 
 #endif // COMMON_H_

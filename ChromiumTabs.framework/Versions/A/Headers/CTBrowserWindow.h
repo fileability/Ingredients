@@ -8,7 +8,7 @@
 
 // Offset from the top of the window frame to the top of the window controls
 // (zoom, close, miniaturize) for a window with a tabstrip.
-const NSInteger CTWindowButtonsWithTabStripOffsetFromTop = 6;
+const NSInteger CTWindowButtonsWithTabStripOffsetFromTop = 4;
 
 // Offset from the top of the window frame to the top of the window controls
 // (zoom, close, miniaturize) for a window without a tabstrip.

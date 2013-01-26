@@ -41,17 +41,17 @@ class CTTabStripModel;
   BOOL verticalLayout_;
 
  @private
-  /* bug! __weak */ CTTabContents* currentTab_;  // weak, tab for which we're showing state
+  __weak CTTabContents* currentTab_;  // weak, tab for which we're showing state
   scoped_nsobject<CTTabStripView> tabStripView_;
-  /* bug! __weak */ NSView* switchView_;  // weak
+  __weak NSView* switchView_;  // weak
   scoped_nsobject<NSView> dragBlockingView_;  // avoid bad window server drags
-  /* bug! __weak */ NewTabButton* newTabButton_;  // weak, obtained from the nib.
+  __weak NewTabButton* newTabButton_;  // weak, obtained from the nib.
 
   // Tracks the newTabButton_ for rollovers.
   scoped_nsobject<NSTrackingArea> newTabTrackingArea_;
   scoped_ptr<CTTabStripModelObserverBridge> bridge_;
-  /* bug! __weak */ CTBrowser *browser_;  // weak
-  /* bug! __weak */ CTTabStripModel* tabStripModel_;  // weak
+  __weak CTBrowser *browser_;  // weak
+  __weak CTTabStripModel* tabStripModel_;  // weak
 
   // YES if the new tab button is currently displaying the hover image (if the
   // mouse is currently over the button).

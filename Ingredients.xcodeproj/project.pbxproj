@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F080A216B39ED300E68141 /* ChromiumTabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F080A116B39ED300E68141 /* ChromiumTabs.framework */; };
+		50F080A316B39ED500E68141 /* ChromiumTabs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50F080A116B39ED300E68141 /* ChromiumTabs.framework */; };
 		7515376D11CC64D5004529B2 /* openingpage.css in Resources */ = {isa = PBXBuildFile; fileRef = 7515376C11CC64D5004529B2 /* openingpage.css */; };
 		751D2D181126F1F400403E64 /* no_selection.html in Resources */ = {isa = PBXBuildFile; fileRef = 751D2D171126F1F400403E64 /* no_selection.html */; };
 		751E45D61125E6CE00CD544A /* tictactoe_style.css in Resources */ = {isa = PBXBuildFile; fileRef = 751E45D51125E6CE00CD544A /* tictactoe_style.css */; };
@@ -72,8 +74,6 @@
 		75301F6D11B2F04A006DA0E3 /* annotations.js in Sources */ = {isa = PBXBuildFile; fileRef = 75301F6C11B2F04A006DA0E3 /* annotations.js */; };
 		75301FA911B2F55D006DA0E3 /* annotations.js in Resources */ = {isa = PBXBuildFile; fileRef = 75301F6C11B2F04A006DA0E3 /* annotations.js */; };
 		7542AF091336F395001A3AFA /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 7542ADA51336F28A001A3AFA /* sqlite3.c */; };
-		75461349135BE7AB00A1BA0A /* ChromiumTabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75461348135BE7AB00A1BA0A /* ChromiumTabs.framework */; };
-		7546134A135BE7BB00A1BA0A /* ChromiumTabs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75461348135BE7AB00A1BA0A /* ChromiumTabs.framework */; };
 		754AA3FC1140267D00321EAF /* AnthillReporter.nib in Resources */ = {isa = PBXBuildFile; fileRef = 754AA3FB1140267D00321EAF /* AnthillReporter.nib */; };
 		755F427E112323C600AA16F5 /* tictactoe.html in Resources */ = {isa = PBXBuildFile; fileRef = 755F427D112323C600AA16F5 /* tictactoe.html */; };
 		755F42AF112326E700AA16F5 /* sourcelist_indexing_wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 755F42AE112326E700AA16F5 /* sourcelist_indexing_wallpaper.png */; };
@@ -158,9 +158,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7546134A135BE7BB00A1BA0A /* ChromiumTabs.framework in CopyFiles */,
 				75943BCE114407C9004126E7 /* Sparkle.framework in CopyFiles */,
 				756F9DE3110BB59100E6F291 /* BWToolkitFramework.framework in CopyFiles */,
+				50F080A316B39ED500E68141 /* ChromiumTabs.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +186,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Ingredients_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredients_Prefix.pch; sourceTree = "<group>"; };
+		50F080A116B39ED300E68141 /* ChromiumTabs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ChromiumTabs.framework; sourceTree = "<group>"; };
 		7507CF4311598197008449DE /* IGKPredicateEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGKPredicateEditor.h; sourceTree = "<group>"; };
 		7507CF4411598197008449DE /* IGKPredicateEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGKPredicateEditor.m; sourceTree = "<group>"; };
 		750DFBCD114671CC004C5D08 /* IGKMattePopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGKMattePopUpButton.h; sourceTree = "<group>"; };
@@ -215,7 +216,6 @@
 		75461340135BE78C00A1BA0A /* IGKTabBrowser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGKTabBrowser.mm; sourceTree = "<group>"; };
 		75461341135BE78C00A1BA0A /* IGKTabContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGKTabContents.h; sourceTree = "<group>"; };
 		75461342135BE78C00A1BA0A /* IGKTabContents.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGKTabContents.mm; sourceTree = "<group>"; };
-		75461348135BE7AB00A1BA0A /* ChromiumTabs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ChromiumTabs.framework; sourceTree = "<group>"; };
 		7546134D135BE86A00A1BA0A /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 		7546134E135BE86A00A1BA0A /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		7546134F135BE86A00A1BA0A /* common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common.mm; sourceTree = "<group>"; };
@@ -390,7 +390,7 @@
 				75B23F6A1140216200EC1D2B /* Security.framework in Frameworks */,
 				75943BA5114407C2004126E7 /* Sparkle.framework in Frameworks */,
 				75A9AAA911495F2300E539F2 /* QuartzCore.framework in Frameworks */,
-				75461349135BE7AB00A1BA0A /* ChromiumTabs.framework in Frameworks */,
+				50F080A216B39ED300E68141 /* ChromiumTabs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +483,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75461348135BE7AB00A1BA0A /* ChromiumTabs.framework */,
 				75943BA4114407C2004126E7 /* Sparkle.framework */,
 				75F67043110CD033005F299C /* libicucore.dylib */,
 				756F9E60110BE76600E6F291 /* WebKit.framework */,
@@ -491,6 +490,7 @@
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				75B23F691140216200EC1D2B /* Security.framework */,
 				75A9AAA811495F2300E539F2 /* QuartzCore.framework */,
+				50F080A116B39ED300E68141 /* ChromiumTabs.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -794,6 +794,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Ingredients" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -992,7 +993,7 @@
 		26FC0A850875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1011,6 +1012,7 @@
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = Ingredients;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1018,7 +1020,7 @@
 		26FC0A860875C7B200E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1034,6 +1036,7 @@
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = Ingredients;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
