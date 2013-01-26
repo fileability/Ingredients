@@ -58,7 +58,7 @@ class CTTabStripModelOrderController : public CTTabStripModelObserver {
   // away. This also skips any phantom tabs.
   int GetValidIndex(int index, int removing_index, bool is_remove) const;
 
-  /* bug! __weak */ CTTabStripModel* tabStripModel_;
+  CTTabStripModel* tabStripModel_;
 
   CTTabStripModel::InsertionPolicy insertion_policy_;
 

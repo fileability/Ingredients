@@ -53,8 +53,8 @@ class CTTabStripModelObserverBridge : public CTTabStripModelObserver {
   virtual void TabStripEmpty();
 
  private:
-  /* bug! __weak */ id controller_;  // owns me
-  /* bug! __weak */ CTTabStripModel* model_;  // owned by CTBrowser
+  id controller_;  // owns me
+  CTTabStripModel* model_;  // owned by CTBrowser
 };
 
 // A collection of methods which can be selectively implemented by any
