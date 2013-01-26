@@ -67,7 +67,11 @@
 
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag {
-	[kitController showWindow:nil];
+    if (flag) {
+        [kitController showWindow:nil];
+    } else {
+        [kitController newWindow:nil];
+    }
 	return YES;
 }
 
